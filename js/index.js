@@ -39,19 +39,27 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 // Task 1: Create selectors to point your data into elements
 // Create selectors by using any of the DOM element's methods
 
 const ctaImage = document.getElementById("cta-img");
 
-const navLinks = document.querySelector("a");
+const navLinks = document.querySelectorAll(".container header nav a");
 
+let navIndex = 1;
+
+navLinks.forEach(link => {
+  link.textContent = siteContent["nav"][`nav-item-${navIndex}`];
+  index++;
+});
+
+const ctaSelector 
 
 //Use the IDs to update src path content
 
-ctaImage.setAttribute('src', https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+ctaImage.setAttribute();
 
 
 //Task 2: Update the HTML with the JSON data
